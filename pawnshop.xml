@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- <!DOCTYPE pawnshop SYSTEM "1.dtd"> -->
+
+
+<!-- 
+
+ДАННИ ЗА ЗАЛОЖЕНИЯ РЕСУРС
+    тип
+    марка/модел
+    автори
+    година на създаване
+    производител
+    графични изображения
+
+ДАННИ ЗА ЗАЛОГА
+    приел залога
+    заложил залога
+    срок на залагане 
+    получен заем
+    статус на залога
+        - създаден / активен / с върнат заем / изтекъл с невърнат заем
+
+-->
+
+<pawnshop>
+    <pawn>
+        <resource>
+            <type></type>
+            <manufacturer></manufacturer>
+            <model></model>
+            <creator></creator>
+            <images></images>
+        </resource>
+        <recipient>
+            <name></name>
+            <surname></surname>
+            <UCN></UCN>
+            <permanent_address></permanent_address>
+            <phone_number></phone_number>
+            <ID_card_number></ID_card_number>
+            
+        </recipient>
+        <submitter></submitter>
+        <pawn_term></pawn_term>
+        <status></status>
+    </pawn>
+</pawnshop>
