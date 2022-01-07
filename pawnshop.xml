@@ -1,49 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <!-- <!DOCTYPE pawnshop SYSTEM "1.dtd"> -->
 
-
-<!-- 
-
-ДАННИ ЗА ЗАЛОЖЕНИЯ РЕСУРС
-    тип
-    марка/модел
-    автори
-    година на създаване
-    производител
-    графични изображения
-
-ДАННИ ЗА ЗАЛОГА
-    приел залога
-    заложил залога
-    срок на залагане 
-    получен заем
-    статус на залога
-        - създаден / активен / с върнат заем / изтекъл с невърнат заем
-
--->
-
 <pawnshop>
-    <pawn>
+    <pawn status="active / pending / settled / EMNR (expired, money not returned)">
+        <amount_given>
+            <currency></currency>
+            <value></value>
+        </amount_given>
         <resource>
             <type></type>
-            <manufacturer></manufacturer>
+            <creator type="author/manufacturer">
+                <name></name>
+            </creator>
             <model></model>
-            <creator></creator>
-            <images></images>
+            <pawnshop_evaluation>
+                <currency></currency>
+                <value></value>
+            </pawnshop_evaluation>
+            <description></description>
+            <images>
+                <image></image>
+            </images>
         </resource>
-        <recipient>
+        <recipient_employee>
             <name></name>
             <surname></surname>
             <UCN></UCN>
             <permanent_address></permanent_address>
             <phone_number></phone_number>
             <ID_card_number></ID_card_number>
-            
-        </recipient>
-        <submitter></submitter>
+        </recipient_employee>
+        <submitter>
+            <name></name>
+            <surname></surname>
+            <UCN></UCN>
+            <permanent_address></permanent_address>
+            <phone_number></phone_number>
+            <ID_card_number></ID_card_number>
+        </submitter>
         <pawn_term></pawn_term>
-        <status></status>
     </pawn>
 </pawnshop>
