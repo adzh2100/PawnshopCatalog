@@ -8,12 +8,12 @@
             <currency></currency>
             <value></value>
         </amount_given>
-        <resource>
+        <resource type="gold/silver/appliances/black appliances">
             <type></type>
             <creator type="author/manufacturer">
                 <name></name>
             </creator>
-            <model></model>
+            <model>gold</model>
             <pawnshop_evaluation>
                 <currency></currency>
                 <value></value>
@@ -39,6 +39,7 @@
             <phone_number></phone_number>
             <ID_card_number></ID_card_number>
         </submitter>
-        <pawn_term></pawn_term>
+        <term></term>
     </pawn>
+
 </pawnshop>

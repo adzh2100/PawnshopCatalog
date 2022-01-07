@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+<!ELEMENT shiporder (orderperson,shipto,item+)>
+<!ATTLIST shiporder orderid CDATA #REQUIRED>
+<!ELEMENT orderperson (#PCDATA)>
+<!ELEMENT shipto (name,address,city,country)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+<!ELEMENT item (title,note?,quantity,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT note (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+    <!NOTATION GIF PUBLIC "GIF">
+    <!NOTATION PNG SYSTEM "image/PNG">
+    <!ENTITY png SYSTEM "https://w7.pngwing.com/pngs/339/460/png-transparent-white-dog-dog-puppy-cartoon-dogs-white-cat-like-mammal-animals-thumbnail.png" NDATA PNG>
+    <!ENTITY gif PUBLIC "-//W3C//GIF logo//EN - public_id" "https://c.tenor.com/5LT51B0DSIoAAAAM/funny-animals-dog.gif" NDATA GIF>
+    <!ENTITY png_copy "&png;">
+    <![INCLUDE [
+    <!ELEMENT channel (item+, title, link, image+, language, description)>
+    ]]>
+    <![IGNORE [
+    <!ELEMENT channel (item+, title, link, description)>
+    ]]>
+    <!ELEMENT item ((title, link, description?) | 
+                    (title, description?, link) |
+                    (link, title, description?) |
+                    (link, description?, title) |
+                    (description?, link, title) |
+                    (description?, title, link)
+                )>
+    <!ELEMENT image ((title, link, url) |
+                    (title, url, link) |
+                    (link, title, url) |
+                    (link, url, title) |
+                    (url, link, title) |
+                    (url, title, link)
+                    )>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT link (#PCDATA)>
+    <!ELEMENT language (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT url (#PCDATA)>
+    <!ATTLIST channel version CDATA "1.0.0"> 
+-->
+<!ELEMENT pawnshop (pawn*)>
+<!ELEMENT pawn (amount_given, resource, recipient_employee, submitter, term)>
+<!ELEMENT amount_given (currency, value)>
+<!ELEMENT resouce (type, creator, model, pawnshop_evaluation, description, images)>
+<!ELEMENT type (#PCDATA)>
+
+<!ELEMENT creator (name)>
+<!ELEMENT pawnshop_evaluation (currency, value)>
+<!ELEMENT description>
