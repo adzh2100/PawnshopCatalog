@@ -49,9 +49,31 @@
 <!ELEMENT pawnshop (pawn*)>
 <!ELEMENT pawn (amount_given, resource, recipient_employee, submitter, term)>
 <!ELEMENT amount_given (currency, value)>
+<!ELEMENT currency (#PCDATA)>
+<!ELEMENT value (#PCDATA)>
+<!-- има ли number или нещо такова като стойност за value -->
 <!ELEMENT resouce (type, creator, model, pawnshop_evaluation, description, images)>
 <!ELEMENT type (#PCDATA)>
-
 <!ELEMENT creator (name)>
-<!ELEMENT pawnshop_evaluation (currency, value)>
-<!ELEMENT description>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT pawnshop-evaluation (currency, value)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT images (img*)>
+<!ELEMENT img (#PCDATA)>
+<!-- не знам снимките какво трябва да са -->
+<!ELEMENT recipient_employee (name, surname, UCN, permanent_address, phone_number, ID_card_number)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT UCN (#PCDATA)>
+<!ELEMENT permanent_address (#PCDATA)>
+<!ELEMENT phone_number (#PCDATA)>
+<!ELEMENT ID_card_number (#PCDATA)>
+<!ELEMENT submitter (name, surname, UCN, permanent_address, phone_number, ID_card_number)>
+<!ELEMENT term (#PCDATA)>
+<!ATTLIST pawn status (Active|Pending|Settled|EMNR) #REQUIRED>
+<!ATTLIST resource type CDATA #REQUIRED>
+<!-- (gold | silver | appliances | black appliances ... ) -->
+<!ATTLIST creator type (Author|Manufacturer) #REQUIRED>
+<!-- не съм сигурна дали да не са 2 отделни просто незадължителни елемента, които да ги има само ако са приложими ппц -->
+<!ATTLIST image href ENTITY #REQUIRED>
+<!NOTATION jpg PUBLIC "jpg viewer">

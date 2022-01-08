@@ -20,7 +20,7 @@
             </pawnshop_evaluation>
             <description></description>
             <images>
-                <image></image>
+                <img href="link"></img>
             </images>
         </resource>
         <recipient_employee>
