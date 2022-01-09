@@ -1,95 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- <!DOCTYPE pawnshop SYSTEM "1.dtd"> -->
-<!-- Също като гледам трябва да ползваме ID, IDREF -->
-<!-- дали да не направим като това примерното в гитхъб -->
-<!-- Каталогът поддържа историческа информация с дата на промяна на запис в каталога и данни за самата
-промяна. -->
+<!DOCTYPE pawnshop SYSTEM "validation.dtd">
 
 <pawnshop>
-    <!-- вариант 1 -->
-    <jewellery>
-        <!-- в тези категории да са залозите, или самите продукти -->
-        <res_name ref=""></res_name>
-    </jewellery>
-    <electronics>
-        <res_name ref=""></res_name>
-    </electronics>
-    <antiques>
-        <res_name ref=""></res_name>
-    </antiques>
-    <art>
-        <res_name ref=""></res_name>
-    </art>
-    <precious_metals>
-        <res_name ref=""></res_name>
-    </precious_metals>
 
-    <!-- вариант 2 -->
-    <active>
-        <pawn ref=""></pawn>
-    </active>
-    <pending>
-        <pawn ref=""></pawn>
-    </pending>
-    <settled>
-        <pawn ref=""></pawn>
-    </settled>
-    <EMNR>
-        <pawn ref=""></pawn>
-    </EMNR>
+    <classification>
+        <jewellery>
+            <resource_ref ref="J000001"></resource_ref>
+            <resource_ref ref=""></resource_ref>
+        </jewellery>
+        <electronics>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+        </electronics>
+        <antiques>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+        </antiques>
+        <art>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+        </art>
+        <precious_metals>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+        </precious_metals>
+        <vehicles>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+            <resource_ref ref=""></resource_ref>
+        </vehicles>
+    </classification>
 
-    <!-- или да имаме секция -->
-    <zalozi>
-        <zalog>
-            <!-- danni za zaloga -->
-            <resurs ref=""></resurs>
-        </zalog>
-    </zalozi>
 
-    <resursi>
-        <resurs id=""></resurs>
-        <!-- danni za resursa -->
-    </resursi>
-    
-    <!-- ако сме във вариант 2 ID ще е атрибут на pawn -->
-    <pawn status="Active / Pending / Settled / EMNR (expired, money not returned)">
-        <amount_given>
-            <currency></currency>
-            <value></value>
-        </amount_given>
-        <resource id="" type="Jewellery|Electronics|Antiques|Art|Precious_Metals">
-            <type></type>
-            <creator type="Author/Manufacturer">
-                <name></name>
-            </creator>
-            <model>gold</model>
+    <resources>
+        <resource id="J000001" classification="Jewellery|Electronics|Antiques|Art|Precious_Metals">
+            <type>
+                Lanec
+            </type>
+            <pawn_ref ref="P-J000001" />
+            <author></author> <!-- or <manufacturer> </..    |  -->
+            <model></model> <!-- optional -->
             <pawnshop_evaluation>
                 <currency></currency>
                 <value></value>
             </pawnshop_evaluation>
-            <description></description>
+            <description></description> <!-- opt -->
             <images>
-                <img href="link"></img>
+                <image href="link"></image>
             </images>
         </resource>
-        <recipient_employee>
-            <name></name>
-            <surname></surname>
-            <UCN></UCN>
-            <permanent_address></permanent_address>
-            <phone_number></phone_number>
-            <ID_card_number></ID_card_number>
-        </recipient_employee>
-        <submitter>
-            <name></name>
-            <surname></surname>
-            <UCN></UCN>
-            <permanent_address></permanent_address>
-            <phone_number></phone_number>
-            <ID_card_number></ID_card_number>
-        </submitter>
-        <term></term>
-    </pawn>
+    </resources>
+
+
+    <pawns>
+        <pawn id="P-J000001" status="Active">
+            <amount_given>
+                <currency></currency>
+                <value></value>
+            </amount_given>
+            <recipient_employee>
+                <name></name>
+                <surname></surname>
+                <employee_id>e0001</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name></name>
+                <surname></surname>
+                <ucn></ucn>
+                <permanent_address></permanent_address>
+                <phone_number></phone_number>
+                <id_card></id_card>
+            </submitter>
+            <term></term>
+        </pawn>
+    </pawns>
 
 </pawnshop>
