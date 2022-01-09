@@ -1,56 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE pawnshop SYSTEM "validation.dtd">
+<!DOCTYPE pawnshop SYSTEM "validation.dtd" [
+    <!ENTITY goldChain SYSTEM "images/gold_chain.jpg" NDATA jpg>
+    <!ENTITY necklace SYSTEM "images/necklace.jpg" NDATA jpg>
+]>
 
 <pawnshop>
 
     <classification>
         <jewellery>
-            <resource_ref ref="J000001"></resource_ref>
-            <resource_ref ref=""></resource_ref>
+            <resource_ref ref="J000001" />
+            <resource_ref ref="J000002" />
         </jewellery>
-        <electronics>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-        </electronics>
-        <antiques>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-        </antiques>
-        <art>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-        </art>
-        <precious_metals>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-        </precious_metals>
-        <vehicles>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-            <resource_ref ref=""></resource_ref>
-        </vehicles>
+        <electronics></electronics>
+        <antiques></antiques>
+        <art></art>
+        <precious_metals></precious_metals>
+        <vehicles></vehicles>
     </classification>
 
 
     <resources>
-        <resource id="J000001" classification="Jewellery|Electronics|Antiques|Art|Precious_Metals">
-            <type>
-                Lanec
-            </type>
+        <resource id="J000001" classification="Jewellery">
+            <type>Gold Chain</type>
             <pawn_ref ref="P-J000001" />
-            <author></author> <!-- or <manufacturer> </..    |  -->
-            <model></model> <!-- optional -->
             <pawnshop_evaluation>
-                <currency></currency>
-                <value></value>
+                <currency>BGN</currency>
+                <value>140.99</value>
             </pawnshop_evaluation>
-            <description></description> <!-- opt -->
+            <description>A 24 karat gold chain</description>
             <images>
-                <image href="link"></image>
+                <image href="goldChain" />
+            </images>
+        </resource>
+        <resource id="J000002" classification="Jewellery">
+            <type>Necklace</type>
+            <pawn_ref ref="P-J000002" />
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>120.22</value>
+            </pawnshop_evaluation>
+            <description>A brand new golden necklace that belonged to Cleopatra's cat </description>
+            <images>
+                <image href="necklace" />
             </images>
         </resource>
     </resources>
@@ -59,23 +51,47 @@
     <pawns>
         <pawn id="P-J000001" status="Active">
             <amount_given>
-                <currency></currency>
-                <value></value>
+                <currency>BGN</currency>
+                <value>75.00</value>
             </amount_given>
             <recipient_employee>
-                <name></name>
-                <surname></surname>
-                <employee_id>e0001</employee_id>
+                <name>Viktor</name>
+                <surname>Petkov</surname>
+                <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
-                <name></name>
-                <surname></surname>
-                <ucn></ucn>
-                <permanent_address></permanent_address>
-                <phone_number></phone_number>
-                <id_card></id_card>
+                <name>Dimitar</name>
+                <surname>Ivanov</surname>
+                <ucn>9502029909</ucn>
+                <permanent_address>Sofia, Bulgaria</permanent_address>
+                <phone_number>0875664446</phone_number>
+                <id_card>641290001</id_card>
             </submitter>
-            <term></term>
+            <term>01.04.2022</term>
+            <created_at>01.01.2022</created_at>
+            <updated_at>01.01.2022</updated_at>
+        </pawn>
+        <pawn id="P-J000002" status="Active">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>50.00</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Viktor</name>
+                <surname>Petkov</surname>
+                <employee_id>E0001</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Eleonora</name>
+                <surname>Todorova</surname>
+                <ucn>9003099909</ucn>
+                <permanent_address>Plovdiv, Bulgaria</permanent_address>
+                <phone_number>0896578546</phone_number>
+                <id_card>640105901</id_card>
+            </submitter>
+            <term>06.06.2022</term>
+            <created_at>05.01.2022</created_at>
+            <updated_at>10.01.2022</updated_at>
         </pawn>
     </pawns>
 

@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!ELEMENT pawnshop (classification, resources, pawns)>
-
 <!-- CLASSIFICATION -->
-
 <!ELEMENT classification (jewellery, electronics, antiques, art, precious_metals, vehicles)>
-<!ELEMENT jewellery (reousrce_ref*)>
-<!ELEMENT electronics (reousrce_ref*)>
-<!ELEMENT antiques (reousrce_ref*)>
-<!ELEMENT art (reousrce_ref*)>
-<!ELEMENT precious_metals (reousrce_ref*)>
+<!ELEMENT jewellery (resource_ref*)>
+<!ELEMENT electronics (resource_ref*)>
+<!ELEMENT antiques (resource_ref*)>
+<!ELEMENT art (resource_ref*)>
+<!ELEMENT precious_metals (resource_ref*)>
 <!ELEMENT vehicles (resource_ref*)>
 <!ELEMENT resource_ref EMPTY>
 <!ATTLIST resource_ref ref IDREF #REQUIRED>
-
 <!-- RESOURCES -->
-
 <!ELEMENT resources (resource*)>
 <!ELEMENT resource (type, pawn_ref, (author | manufacturer)?, model?, pawnshop_evaluation, description?, images)>
+<!ATTLIST resource
+    id ID #REQUIRED
+    classification (Jewellery|Electronics|Antiques|Art|Precious_Metals) #REQUIRED
+>
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT pawn_ref EMPTY>
 <!ATTLIST pawn_ref ref IDREF #REQUIRED>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT manufacturer (#PCDATA)>
 <!ELEMENT model (#PCDATA)>
-<!ELEMENT pawnshop_evalution (currency, value)>
+<!ELEMENT pawnshop_evaluation (currency, value)>
 <!ELEMENT currency (#PCDATA)>
 <!ELEMENT value (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
@@ -32,17 +31,15 @@
 <!ELEMENT image EMPTY>
 <!ATTLIST image href ENTITY #REQUIRED>
 <!NOTATION jpg PUBLIC "jpg viewer">
-
 <!-- PAWNS -->
-
 <!ELEMENT pawns (pawn*)>
-<!ELEMENT pawn (amount_given, recipient_employee, submitter, term)>
-<!ATTLIST pawn id ID #REQUIRED
-               status (Active|Pending|Settled|EMNR) #REQUIRED>
+<!ELEMENT pawn (amount_given, recipient_employee, submitter, term, created_at, updated_at)>
+<!ATTLIST pawn
+    id ID #REQUIRED
+    status (Active|Pending|Settled|EMNR) #REQUIRED
+>
 <!-- EMNR <=> (expired, money not returned) -->
 <!ELEMENT amount_given (currency, value)>
-<!ELEMENT currency (#PCDATA)>
-<!ELEMENT value (#PCDATA)>
 <!ELEMENT recipient_employee (name, surname, employee_id)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT surname (#PCDATA)>
@@ -53,3 +50,5 @@
 <!ELEMENT phone_number (#PCDATA)>
 <!ELEMENT id_card (#PCDATA)>
 <!ELEMENT term (#PCDATA)>
+<!ELEMENT created_at (#PCDATA)>
+<!ELEMENT updated_at (#PCDATA)>
