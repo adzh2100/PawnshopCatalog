@@ -8,16 +8,16 @@
 <!ELEMENT art (resource_ref*)>
 <!ELEMENT precious_metals (resource_ref*)>
 <!ELEMENT vehicles (resource_ref*)>
-<!ELEMENT resource_ref EMPTY>
+<!ELEMENT resource_ref (#PCDATA)>
 <!ATTLIST resource_ref ref IDREF #REQUIRED>
 <!-- RESOURCES -->
 <!ELEMENT resources (resource*)>
-<!ELEMENT resource (type, pawn_ref, (author | manufacturer)?, model?, pawnshop_evaluation, description?, images)>
+<!ELEMENT resource (name, pawn_ref, (author | manufacturer)?, model?, pawnshop_evaluation, description?, image)>
 <!ATTLIST resource
     id ID #REQUIRED
     classification (Jewellery|Electronics|Antiques|Art|Precious_Metals|Vehicles) #REQUIRED
 >
-<!ELEMENT type (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
 <!ELEMENT pawn_ref EMPTY>
 <!ATTLIST pawn_ref ref IDREF #REQUIRED>
 <!ELEMENT author (#PCDATA)>
@@ -27,7 +27,6 @@
 <!ELEMENT currency (#PCDATA)>
 <!ELEMENT value (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
-<!ELEMENT images (image*)>
 <!ELEMENT image EMPTY>
 <!ATTLIST image href ENTITY #REQUIRED>
 <!NOTATION jpg PUBLIC "jpg viewer">

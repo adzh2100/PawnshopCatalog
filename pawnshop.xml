@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="pawnshop.xsl"?>
-
+<?xml-stylesheet name="text/xsl" href="pawnshop.xsl"?>
 
 <!DOCTYPE pawnshop SYSTEM "pawnshop.dtd" [
     <!ENTITY goldChain SYSTEM "images/gold_chain.jpg" NDATA jpg>
     <!ENTITY necklace SYSTEM "images/necklace.jpg" NDATA jpg>
     <!ENTITY smartphone SYSTEM "images/iphoneXR.jpg" NDATA jpg>
-    <!ENTITY smartphone SYSTEM "images/watch.jpg" NDATA jpg>
+    <!ENTITY watch SYSTEM "images/watch.jpg" NDATA jpg>
     <!ENTITY vase SYSTEM "images/antique_vase.jpg" NDATA jpg>
     <!ENTITY americanGothicPaintingReplica SYSTEM "images/american_gothic.jpg" NDATA jpg>
     <!ENTITY adamPaintingReplica SYSTEM "images/creation_of_adam.jpg" NDATA jpg>
@@ -17,183 +16,161 @@
 ]>
 
 <pawnshop>
-
     <classification>
         <jewellery>
-            <resource_ref ref="J000001" />
-            <resource_ref ref="J000002" />
+            <resource_ref ref="J000001">Gold Chain</resource_ref>
+            <resource_ref ref="J000002">Necklace</resource_ref>
         </jewellery>
         <electronics>
-            <resource_ref ref="E000001" />
-            <resource_ref ref="E000002" />
+            <resource_ref ref="E000001">Iphone XR smartphone</resource_ref>
+            <resource_ref ref="E000002">Seiko Series 5 Blue</resource_ref>
         </electronics>
         <antiques>
-            <resource_ref ref="AQ0001" />
+            <resource_ref ref="AQ0001">Antique Vase</resource_ref>
         </antiques>
         <art>
-            <resource_ref ref="A000001" />
-            <resource_ref ref="A000002" />
+            <resource_ref ref="A000001">American Gothic Painting</resource_ref>
+            <resource_ref ref="A000002">Creation Of Adam Painting</resource_ref>
+
         </art>
         <precious_metals>
-            <resource_ref ref="M000001" />
-            <resource_ref ref="M000002" />
+            <resource_ref ref="M000001">24K gold piece</resource_ref>
+            <resource_ref ref="M000002">10g platinum piece</resource_ref>
         </precious_metals>
         <vehicles>
-            <resource_ref ref="V000001" />
-            <resource_ref ref="V000002" />
+            <resource_ref ref="V000001">VW Golf 4</resource_ref>
+            <resource_ref ref="V000002">Fiat Punto</resource_ref>
         </vehicles>
     </classification>
 
 
     <resources>
         <resource id="J000001" classification="Jewellery">
-            <type>Gold Chain</type>
+            <name>Gold Chain</name>
             <pawn_ref ref="P-J000001" />
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>140.99</value>
             </pawnshop_evaluation>
             <description>A 24 karat gold chain</description>
-            <images>
                 <image href="goldChain" />
-            </images>
         </resource>
         <resource id="J000002" classification="Jewellery">
-            <type>Necklace</type>
+            <name>Necklace</name>
             <pawn_ref ref="P-J000002" />
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>120.22</value>
             </pawnshop_evaluation>
             <description>A brand new golden necklace that belonged to Cleopatra's cat </description>
-            <images>
                 <image href="necklace" />
-            </images>
         </resource>
 
         <resource id="E000001" classification="Electronics">
-            <type>Smartphone</type>
+            <name>Iphone XR smartphone</name>
             <pawn_ref ref="P-E000001" />
-            <model>Iphone XR</model>
+            <model>XR</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>240.00</value>
+                <value>300.00</value>
             </pawnshop_evaluation>
             <description>Second hand Iphone XR with 128GB memory space and iOS 15.2 installed</description>
-            <images>
                 <image href="iphoneXR" />
-            </images>
         </resource>
 
         <resource id="E000002" classification="Electronics">
-            <type>Watch</type>
+            <name>Seiko Series 5 Blue</name>
             <pawn_ref ref="P-E000002" />
-            <model>Seiko Series 5</model>
+            <model>Series 5</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>314.20</value>
+                <value>366.20</value>
             </pawnshop_evaluation>
             <description>Minimal wear full automatic watch</description>
-            <images>
                 <image href="watch" />
-            </images>
         </resource>
 
         <resource id="AQ0001" classification="Antiques">
-            <type>Vase</type>
+            <name>Antique Vase</name>
             <pawn_ref ref="P-AQ0001" />
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>54.20</value>
+                <value>80.20</value>
             </pawnshop_evaluation>
             <description>Antique vase from 18th century</description>
-            <images>
                 <image href="antique_vase" />
-            </images>
         </resource>
 
         <resource id="A000001" classification="Art">
-            <type>Painting</type>
+            <name>American Gothic Painting</name>
             <pawn_ref ref="P-A000001" />
             <author>Jimmy Italiano</author>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>530.20</value>
+                <value>660.20</value>
             </pawnshop_evaluation>
             <description>Realistic replica of the famous painting American Gothic from 20th century</description>
-            <images>
                 <image href="american_gothic" />
-            </images>
         </resource>
 
         <resource id="A000002" classification="Art">
-            <type>Painting</type>
+            <name>Creation Of Adam Painting</name>
             <pawn_ref ref="P-A000002" />
             <author>Unknown</author>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>330.20</value>
+                <value>390.20</value>
             </pawnshop_evaluation>
             <description>Replica of the famous painting Creation of Adam</description>
-            <images>
                 <image href="creation_of_adam" />
-            </images>
         </resource>
 
         <resource id="M000001" classification="Precious_Metals">
-            <type>Gold</type>
+            <name>24K gold piece</name>
             <pawn_ref ref="P-M000001" />
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>50.20</value>
+                <value>70.20</value>
             </pawnshop_evaluation>
             <description>10 gram 24k gold bar</description>
-            <images>
                 <image href="gold24k" />
-            </images>
         </resource>
 
         <resource id="M000002" classification="Precious_Metals">
-            <type>Platinium</type>
+            <name>10g platinum piece</name>
             <pawn_ref ref="P-M000002" />
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>14.60</value>
+                <value>30.60</value>
             </pawnshop_evaluation>
             <description>10 gram platinum bar</description>
-            <images>
                 <image href="10_gram_platinum" />
-            </images>
         </resource>
 
         <resource id="V000001" classification="Vehicles">
-            <type>Car</type>
+            <name>VW Golf 4</name>
             <pawn_ref ref="P-V000001" />
             <manufacturer>VW</manufacturer>
             <model>Golf 4</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>700.60</value>
+                <value>900.60</value>
             </pawnshop_evaluation>
             <description>Golf 4 from 2001 year, 1.6 petrol engine with 101 HP</description>
-            <images>
                 <image href="vw_golf4" />
-            </images>
         </resource>
 
         <resource id="V000002" classification="Vehicles">
-            <type>Car</type>
+            <name>Fiat Punto</name>
             <pawn_ref ref="P-V000002" />
             <manufacturer>Fiat</manufacturer>
             <model>Punto</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>400.00</value>
+                <value>600.00</value>
             </pawnshop_evaluation>
             <description>Fiat punto from 98' with 70hp and a 1.4 petrol engine</description>
-            <images>
                 <image href="fiat_punto" />
-            </images>
         </resource>
     </resources>
 
