@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pawnshop_xsl.xsl"?>
+
 
 <!DOCTYPE pawnshop SYSTEM "validation.dtd" [
     <!ENTITY goldChain SYSTEM "images/gold_chain.jpg" NDATA jpg>
     <!ENTITY necklace SYSTEM "images/necklace.jpg" NDATA jpg>
+    <!ENTITY smartphone SYSTEM "images/iphoneXR.jpg" NDATA jpg>
+    <!ENTITY smartphone SYSTEM "images/watch.jpg" NDATA jpg>
+    <!ENTITY vase SYSTEM "images/antique_vase.jpg" NDATA jpg>
+    <!ENTITY americanGothicPaintingReplica SYSTEM "images/american_gothic.jpg" NDATA jpg>
+    <!ENTITY adamPaintingReplica SYSTEM "images/creation_of_adam.jpg" NDATA jpg>
+    <!ENTITY gold24k SYSTEM "images/gold24k.jpg" NDATA jpg>
+    <!ENTITY platiniumBar SYSTEM "images/10_gram_platinum.jpg" NDATA jpg>
+    <!ENTITY VWGolf4 SYSTEM "images/vw_golf4.jpg" NDATA jpg>
+    <!ENTITY fiatPunto SYSTEM "images/fiat_punto.jpg" NDATA jpg>
 ]>
 
 <pawnshop>
@@ -12,11 +23,25 @@
             <resource_ref ref="J000001" />
             <resource_ref ref="J000002" />
         </jewellery>
-        <electronics></electronics>
-        <antiques></antiques>
-        <art></art>
-        <precious_metals></precious_metals>
-        <vehicles></vehicles>
+        <electronics>
+            <resource_ref ref="E000001" />
+            <resource_ref ref="E000002" />
+        </electronics>
+        <antiques>
+            <resource_ref ref="AQ0001" />
+        </antiques>
+        <art>
+            <resource_ref ref="A000001" />
+            <resource_ref ref="A000002" />
+        </art>
+        <precious_metals>
+            <resource_ref ref="M000001" />
+            <resource_ref ref="M000002" />
+        </precious_metals>
+        <vehicles>
+            <resource_ref ref="V000001" />
+            <resource_ref ref="V000002" />
+        </vehicles>
     </classification>
 
 
@@ -43,6 +68,131 @@
             <description>A brand new golden necklace that belonged to Cleopatra's cat </description>
             <images>
                 <image href="necklace" />
+            </images>
+        </resource>
+
+        <resource id="E000001" classification="Electronics">
+            <type>Smartphone</type>
+            <pawn_ref ref="P-E000001" />
+            <model>Iphone XR</model>
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>240.00</value>
+            </pawnshop_evaluation>
+            <description>Second hand Iphone XR with 128GB memory space and iOS 15.2 installed</description>
+            <images>
+                <image href="iphoneXR" />
+            </images>
+        </resource>
+
+        <resource id="E000002" classification="Electronics">
+            <type>Watch</type>
+            <pawn_ref ref="P-E000002" />
+            <model>Seiko Series 5</model>
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>314.20</value>
+            </pawnshop_evaluation>
+            <description>Minimal wear full automatic watch</description>
+            <images>
+                <image href="watch" />
+            </images>
+        </resource>
+
+        <resource id="AQ0001" classification="Antiques">
+            <type>Vase</type>
+            <pawn_ref ref="P-AQ0001" />
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>54.20</value>
+            </pawnshop_evaluation>
+            <description>Antique vase from 18th century</description>
+            <images>
+                <image href="antique_vase" />
+            </images>
+        </resource>
+
+        <resource id="A000001" classification="Art">
+            <type>Painting</type>
+            <pawn_ref ref="P-A000001" />
+            <author>Jimmy Italiano</author>
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>530.20</value>
+            </pawnshop_evaluation>
+            <description>Realistic replica of the famous painting American Gothic from 20th century</description>
+            <images>
+                <image href="american_gothic" />
+            </images>
+        </resource>
+
+        <resource id="A000002" classification="Art">
+            <type>Painting</type>
+            <pawn_ref ref="P-A000002" />
+            <author>Unknown</author>
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>330.20</value>
+            </pawnshop_evaluation>
+            <description>Replica of the famous painting Creation of Adam</description>
+            <images>
+                <image href="creation_of_adam" />
+            </images>
+        </resource>
+
+        <resource id="M000001" classification="Precious_Metals">
+            <type>Gold</type>
+            <pawn_ref ref="P-M000001" />
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>50.20</value>
+            </pawnshop_evaluation>
+            <description>10 gram 24k gold bar</description>
+            <images>
+                <image href="gold24k" />
+            </images>
+        </resource>
+
+        <resource id="M000002" classification="Precious_Metals">
+            <type>Platinium</type>
+            <pawn_ref ref="P-M000002" />
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>14.60</value>
+            </pawnshop_evaluation>
+            <description>10 gram platinum bar</description>
+            <images>
+                <image href="10_gram_platinum" />
+            </images>
+        </resource>
+
+        <resource id="V000001" classification="Vehicles">
+            <type>Car</type>
+            <pawn_ref ref="P-V000001" />
+            <manufacturer>VW</manufacturer>
+            <model>Golf 4</model>
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>700.60</value>
+            </pawnshop_evaluation>
+            <description>Golf 4 from 2001 year, 1.6 petrol engine with 101 HP</description>
+            <images>
+                <image href="vw_golf4" />
+            </images>
+        </resource>
+
+        <resource id="V000002" classification="Vehicles">
+            <type>Car</type>
+            <pawn_ref ref="P-V000002" />
+            <manufacturer>Fiat</manufacturer>
+            <model>Punto</model>
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>400.00</value>
+            </pawnshop_evaluation>
+            <description>Fiat punto from 98' with 70hp and a 1.4 petrol engine</description>
+            <images>
+                <image href="fiat_punto" />
             </images>
         </resource>
     </resources>
@@ -93,6 +243,211 @@
             <created_at>05.01.2022</created_at>
             <updated_at>10.01.2022</updated_at>
         </pawn>
-    </pawns>
+        <pawn id="P-E000001" status="Pending">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>240.00</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Viktor</name>
+                <surname>Petkov</surname>
+                <employee_id>E0001</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Qvor</name>
+                <surname>Todorov</surname>
+                <ucn>9003088809</ucn>
+                <permanent_address>Varna, Bulgaria</permanent_address>
+                <phone_number>0898566519</phone_number>
+                <id_card>640195901</id_card>
+            </submitter>
+            <term>10.02.2022</term>
+            <created_at>10.01.2022</created_at>
+            <updated_at>10.01.2022</updated_at>
+        </pawn>
+        <pawn id="P-E000002" status="Active">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>314.20</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Elena</name>
+                <surname>Ivanova</surname>
+                <employee_id>E0002</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Alexander</name>
+                <surname>Dzhindzhi</surname>
+                <ucn>9333688899</ucn>
+                <permanent_address>Varna, Bulgaria</permanent_address>
+                <phone_number>0898732119</phone_number>
+                <id_card>641103201</id_card>
+            </submitter>
+            <term>05.02.2022</term>
+            <created_at>04.01.2022</created_at>
+            <updated_at>04.01.2022</updated_at>
+        </pawn>
 
+        <pawn id="P-AQ0001" status="Active">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>54.20</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Elena</name>
+                <surname>Ivanova</surname>
+                <employee_id>E0002</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Alexander</name>
+                <surname>Dzhindzhi</surname>
+                <ucn>9333688899</ucn>
+                <permanent_address>Varna, Bulgaria</permanent_address>
+                <phone_number>0898732119</phone_number>
+                <id_card>641103201</id_card>
+            </submitter>
+            <term>11.04.2022</term>
+            <created_at>01.01.2022</created_at>
+            <updated_at>02.01.2022</updated_at>
+        </pawn>
+
+
+        <pawn id="P-A000001" status="Settled">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>530.20</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Elena</name>
+                <surname>Ivanova</surname>
+                <employee_id>E0002</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Versace</name>
+                <surname>Mulyachki</surname>
+                <ucn>6612628606</ucn>
+                <permanent_address>Gotse Delchev, Bulgaria</permanent_address>
+                <phone_number>0898737779</phone_number>
+                <id_card>643453221</id_card>
+            </submitter>
+            <term>11.04.2022</term>
+            <created_at>01.01.2022</created_at>
+            <updated_at>02.01.2022</updated_at>
+        </pawn>
+
+        <pawn id="P-A000002" status="Active">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>330.20</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Elena</name>
+                <surname>Ivanova</surname>
+                <employee_id>E0002</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Versace</name>
+                <surname>Mulyachki</surname>
+                <ucn>6612628606</ucn>
+                <permanent_address>Gotse Delchev, Bulgaria</permanent_address>
+                <phone_number>0898737779</phone_number>
+                <id_card>643453221</id_card>
+            </submitter>
+            <term>14.07.2022</term>
+            <created_at>13.01.2022</created_at>
+            <updated_at>14.01.2022</updated_at>
+        </pawn>
+
+        <pawn id="P-M000001" status="Settled">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>50.20</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Viktor</name>
+                <surname>Petkov</surname>
+                <employee_id>E0001</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Antonio</name>
+                <surname>Meshenliev</surname>
+                <ucn>6612661325</ucn>
+                <permanent_address>Pernik, Bulgaria</permanent_address>
+                <phone_number>0878214779</phone_number>
+                <id_card>649215441</id_card>
+            </submitter>
+            <term>14.07.2022</term>
+            <created_at>13.01.2022</created_at>
+            <updated_at>14.01.2022</updated_at>
+        </pawn>
+
+        <pawn id="P-M000002" status="Active">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>14.60</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Viktor</name>
+                <surname>Petkov</surname>
+                <employee_id>E0001</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Toronto</name>
+                <surname>Angelov</surname>
+                <ucn>3516236723</ucn>
+                <permanent_address>Pernik, Bulgaria</permanent_address>
+                <phone_number>0871222679</phone_number>
+                <id_card>649204449</id_card>
+            </submitter>
+            <term>01.03.2022</term>
+            <created_at>01.01.2022</created_at>
+            <updated_at>03.01.2022</updated_at>
+        </pawn>
+
+        <pawn id="P-V000001" status="Pending">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>700.60</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Viktor</name>
+                <surname>Petkov</surname>
+                <employee_id>E0001</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Vasil</name>
+                <surname>Zaimov</surname>
+                <ucn>3224146733</ucn>
+                <permanent_address>Dabrash, Bulgaria</permanent_address>
+                <phone_number>0871431227</phone_number>
+                <id_card>249213649</id_card>
+            </submitter>
+            <term>01.03.2022</term>
+            <created_at>04.01.2022</created_at>
+            <updated_at>04.01.2022</updated_at>
+        </pawn>
+
+        <pawn id="P-V000002" status="Active">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>400.00</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Viktor</name>
+                <surname>Petkov</surname>
+                <employee_id>E0001</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Dimitar</name>
+                <surname>Zeinev</surname>
+                <ucn>1211163244</ucn>
+                <permanent_address>Dabrash, Bulgaria</permanent_address>
+                <phone_number>0875531325</phone_number>
+                <id_card>742514649</id_card>
+            </submitter>
+            <term>05.07.2022</term>
+            <created_at>04.01.2022</created_at>
+            <updated_at>04.01.2022</updated_at>
+        </pawn>
+    </pawns>
 </pawnshop>

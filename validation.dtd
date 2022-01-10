@@ -15,7 +15,7 @@
 <!ELEMENT resource (type, pawn_ref, (author | manufacturer)?, model?, pawnshop_evaluation, description?, images)>
 <!ATTLIST resource
     id ID #REQUIRED
-    classification (Jewellery|Electronics|Antiques|Art|Precious_Metals) #REQUIRED
+    classification (Jewellery|Electronics|Antiques|Art|Precious_Metals|Vehicles) #REQUIRED
 >
 <!ELEMENT type (#PCDATA)>
 <!ELEMENT pawn_ref EMPTY>
