@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="pawnshop_xsl.xsl"?>
+<?xml-stylesheet type="text/xsl" href="pawnshop.xsl"?>
 
 
-<!DOCTYPE pawnshop SYSTEM "validation.dtd" [
+<!DOCTYPE pawnshop SYSTEM "pawnshop.dtd" [
     <!ENTITY goldChain SYSTEM "images/gold_chain.jpg" NDATA jpg>
     <!ENTITY necklace SYSTEM "images/necklace.jpg" NDATA jpg>
     <!ENTITY smartphone SYSTEM "images/iphoneXR.jpg" NDATA jpg>

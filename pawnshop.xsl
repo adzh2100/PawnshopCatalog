@@ -125,6 +125,8 @@
       <xsl:call-template name="supplements" />
 
     </fo:root>
+
+
   </xsl:template>
 
   <!--==========================Images Template=================================-->
