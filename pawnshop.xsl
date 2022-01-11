@@ -21,7 +21,7 @@
               <fo:block margin-bottom="10mm">
                 Pawnshop Catalog FMI
               </fo:block>
-              <!-- <fo:external-graphic src="url('pictures/pharmacy.png')" content-height="500" content-width="360" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic> -->
+               <fo:external-graphic src="url('https://cdn-icons-png.flaticon.com/512/2656/2656808.png')" content-height="500" content-width="360" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic> 
             </fo:block>
           </fo:block-container>
         </fo:flow>
@@ -118,18 +118,18 @@
           </fo:block-container>
         </fo:flow>
       </fo:page-sequence>
-      <xsl:call-template name="jewellery" />
+      <xsl:call-template name="resource" />
     </fo:root>
   </xsl:template>
 
 
   <!--      Images      -->
   <xsl:template match="image">
-    <fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="200" content-width="245" />
+    <fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="200" content-width="245" border="4px solid black" />
   </xsl:template>
 
-  <!--      Jewellery      -->
-  <xsl:template name="jewellery">
+  <!--      Resource      -->
+  <xsl:template name="resource">
     <xsl:for-each select="pawnshop/resources/resource">
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
@@ -140,8 +140,8 @@
           </fo:block-container>
 
           <fo:table>
-            <fo:table-column column-width="60%" />
-            <fo:table-column column-width="40%" />
+            <fo:table-column column-width="50%" />
+            <fo:table-column column-width="50%" />
 
             <fo:table-body>
               <fo:table-row>
@@ -155,31 +155,36 @@
                       </fo:inline>
                     </fo:block>
 
+                    <xsl-if test="model">
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
-                      Model:
-                      <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
-                        <xsl:value-of select="model" />
-                      </fo:inline>
-                    </fo:block>
+                        Model:
+                        <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
+                          <xsl:value-of select="model" />
+                        </fo:inline>
+                      </fo:block>
+                    </xsl-if>
+                    
+                    <xsl-if test="manufacturer">
+                      <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
+                        Manufacturer:
+                        <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
+                          <xsl:value-of select="manufacturer" />
+                        </fo:inline>
+                      </fo:block>
+                    </xsl-if>
 
-                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
-                      Manufacturer:
-                      <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
-                        <xsl:value-of select="manufacturer" />
-                      </fo:inline>
-                    </fo:block>
 
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
                       Description:
-                      <fo:block position="relative" font-weight="normal" font-size="16pt">
+                      <fo:block position="relative" font-weight="normal" font-size="16px">
                         <xsl:value-of select="description" />
                       </fo:block>
                     </fo:block>
                   </fo:block-container>
                 </fo:table-cell>
                 <fo:table-cell>
-                  <fo:block-container position="absolute" top="0" left="10px">
-                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="0mm">
+                  <fo:block-container position="relative" >
+                    <fo:block position="relative" margin-left="20px">
                       <xsl:apply-templates select="image" />
                     </fo:block>
                   </fo:block-container>
@@ -211,7 +216,8 @@
               Submitter:
               <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
                 <xsl:value-of select="id(pawn_ref/@ref)/submitter/name" />
-                <xsl:text></xsl:text>
+              </fo:inline>
+              <fo:inline position="relative" font-weight="normal" font-size="16px">
                 <xsl:value-of select="id(pawn_ref/@ref)/submitter/surname" />
               </fo:inline>
             </fo:block>
@@ -220,10 +226,10 @@
               Recipient employee:
               <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
                 <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/name" />
-                <xsl:text></xsl:text>
+              </fo:inline>
+              <fo:inline position="relative" font-weight="normal" font-size="16px">
                 <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/surname" />
               </fo:inline>
-
               <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
                 Creation date:
                 <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">

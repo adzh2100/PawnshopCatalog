@@ -4,9 +4,9 @@
 <!DOCTYPE pawnshop SYSTEM "pawnshop.dtd" [
     <!ENTITY goldChain SYSTEM "images/gold_chain.jpg" NDATA jpg>
     <!ENTITY necklace SYSTEM "images/necklace.jpg" NDATA jpg>
-    <!ENTITY smartphone SYSTEM "images/iphoneXR.jpg" NDATA jpg>
+    <!ENTITY iphoneXR SYSTEM "images/iphoneXR.jpg" NDATA jpg>
     <!ENTITY watch SYSTEM "images/watch.jpg" NDATA jpg>
-    <!ENTITY vase SYSTEM "images/antique_vase.jpg" NDATA jpg>
+    <!ENTITY antiqueVase SYSTEM "images/antique_vase.jpg" NDATA jpg>
     <!ENTITY americanGothicPaintingReplica SYSTEM "images/american_gothic.jpg" NDATA jpg>
     <!ENTITY adamPaintingReplica SYSTEM "images/creation_of_adam.jpg" NDATA jpg>
     <!ENTITY gold24k SYSTEM "images/gold24k.jpg" NDATA jpg>
@@ -53,7 +53,7 @@
                 <value>140.99</value>
             </pawnshop_evaluation>
             <description>A 24 karat gold chain</description>
-                <image href="goldChain" />
+            <image href="goldChain" />
         </resource>
         <resource id="J000002" classification="Jewellery">
             <name>Necklace</name>
@@ -63,7 +63,7 @@
                 <value>120.22</value>
             </pawnshop_evaluation>
             <description>A brand new golden necklace that belonged to Cleopatra's cat </description>
-                <image href="necklace" />
+            <image href="necklace" />
         </resource>
 
         <resource id="E000001" classification="Electronics">
@@ -75,7 +75,7 @@
                 <value>300.00</value>
             </pawnshop_evaluation>
             <description>Second hand Iphone XR with 128GB memory space and iOS 15.2 installed</description>
-                <image href="iphoneXR" />
+            <image href="iphoneXR" />
         </resource>
 
         <resource id="E000002" classification="Electronics">
@@ -87,7 +87,7 @@
                 <value>366.20</value>
             </pawnshop_evaluation>
             <description>Minimal wear full automatic watch</description>
-                <image href="watch" />
+            <image href="watch" />
         </resource>
 
         <resource id="AQ0001" classification="Antiques">
@@ -98,7 +98,7 @@
                 <value>80.20</value>
             </pawnshop_evaluation>
             <description>Antique vase from 18th century</description>
-                <image href="antique_vase" />
+            <image href="antiqueVase" />
         </resource>
 
         <resource id="A000001" classification="Art">
@@ -110,7 +110,7 @@
                 <value>660.20</value>
             </pawnshop_evaluation>
             <description>Realistic replica of the famous painting American Gothic from 20th century</description>
-                <image href="american_gothic" />
+            <image href="americanGothicPaintingReplica" />
         </resource>
 
         <resource id="A000002" classification="Art">
@@ -122,7 +122,7 @@
                 <value>390.20</value>
             </pawnshop_evaluation>
             <description>Replica of the famous painting Creation of Adam</description>
-                <image href="creation_of_adam" />
+            <image href="adamPaintingReplica" />
         </resource>
 
         <resource id="M000001" classification="Precious_Metals">
@@ -133,7 +133,7 @@
                 <value>70.20</value>
             </pawnshop_evaluation>
             <description>10 gram 24k gold bar</description>
-                <image href="gold24k" />
+            <image href="gold24k" />
         </resource>
 
         <resource id="M000002" classification="Precious_Metals">
@@ -144,7 +144,7 @@
                 <value>30.60</value>
             </pawnshop_evaluation>
             <description>10 gram platinum bar</description>
-                <image href="10_gram_platinum" />
+            <image href="platiniumBar" />
         </resource>
 
         <resource id="V000001" classification="Vehicles">
@@ -157,7 +157,7 @@
                 <value>900.60</value>
             </pawnshop_evaluation>
             <description>Golf 4 from 2001 year, 1.6 petrol engine with 101 HP</description>
-                <image href="vw_golf4" />
+            <image href="VWGolf4" />
         </resource>
 
         <resource id="V000002" classification="Vehicles">
@@ -170,7 +170,7 @@
                 <value>600.00</value>
             </pawnshop_evaluation>
             <description>Fiat punto from 98' with 70hp and a 1.4 petrol engine</description>
-                <image href="fiat_punto" />
+            <image href="fiatPunto" />
         </resource>
     </resources>
 
