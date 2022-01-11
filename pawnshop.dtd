@@ -17,7 +17,6 @@
     id ID #REQUIRED
     classification (Jewellery|Electronics|Antiques|Art|Precious_Metals|Vehicles) #REQUIRED
 >
-<!ELEMENT name (#PCDATA)>
 <!ELEMENT pawn_ref EMPTY>
 <!ATTLIST pawn_ref ref IDREF #REQUIRED>
 <!ELEMENT author (#PCDATA)>
