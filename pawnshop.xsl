@@ -133,51 +133,62 @@
     <xsl:for-each select="pawnshop/resources/resource">
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
-          <fo:block-container position="relative">
+          <fo:block-container position="relative" wrap-option="wrap">
             <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Arial" font-size="40px" color="black" margin-bottom="20px">
               <xsl:value-of select="name" />
             </fo:block>
           </fo:block-container>
 
-          <fo:block-container position="absolute" top="3cm" left="8cm">
-            <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="0mm">
-              <xsl:apply-templates select="image" />
-            </fo:block>
-          </fo:block-container>
+          <fo:table>
+            <fo:table-column column-width="60%" />
+            <fo:table-column column-width="40%" />
 
-          <fo:block-container position="relative">
+            <fo:table-body>
+              <fo:table-row>
+                <fo:table-cell>
+                  <fo:block-container position="relative">
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
+                      Price:
+                      <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
+                        <xsl:value-of select="pawnshop_evaluation/currency" />
+                        <xsl:value-of select="pawnshop_evaluation/value" />
+                      </fo:inline>
+                    </fo:block>
 
-            <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
-              Price:
-              <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
-                <xsl:value-of select="pawnshop_evaluation/currency" />
-                <xsl:value-of select="pawnshop_evaluation/value" />
-              </fo:inline>
-            </fo:block>
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
+                      Model:
+                      <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
+                        <xsl:value-of select="model" />
+                      </fo:inline>
+                    </fo:block>
 
-            <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
-              Model:
-              <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
-                <xsl:value-of select="model" />
-              </fo:inline>
-            </fo:block>
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
+                      Manufacturer:
+                      <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
+                        <xsl:value-of select="manufacturer" />
+                      </fo:inline>
+                    </fo:block>
 
-            <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
-              Manufacturer:
-              <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16px">
-                <xsl:value-of select="manufacturer" />
-              </fo:inline>
-            </fo:block>
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
+                      Description:
+                      <fo:block position="relative" font-weight="normal" font-size="16pt">
+                        <xsl:value-of select="description" />
+                      </fo:block>
+                    </fo:block>
+                  </fo:block-container>
+                </fo:table-cell>
+                <fo:table-cell>
+                  <fo:block-container position="absolute" top="0" left="10px">
+                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="0mm">
+                      <xsl:apply-templates select="image" />
+                    </fo:block>
+                  </fo:block-container>
+                </fo:table-cell>
+              </fo:table-row>
+            </fo:table-body>
+          </fo:table>
 
-            <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18px" color="black" padding-before="10px">
-              Description:
-              <fo:block position="relative" font-weight="normal" font-size="16pt">
-                <xsl:value-of select="description" />
-              </fo:block>
-            </fo:block>
-          </fo:block-container>
-
-          <fo:block-container position="relative" font-style="italic" top="12.5cm" left="0" margin-top="50px">
+          <fo:block-container position="relative" font-style="italic" top="12.5cm" left="0" margin-top="100px">
             <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="20px" color="black" padding-before="10px">
             Additional details of the pawn this product is associated with:
           </fo:block>
