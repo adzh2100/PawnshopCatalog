@@ -18,9 +18,11 @@
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
             <fo:block position="absolute" text-align="center" font-weight="bold" margin-left="2cm" font-family="Monotype Corsiva" font-size="56pt" padding-before="50mm" color="black">
-              <fo:block margin-bottom="10mm">
-                Каталог на заложна къща ФМИ
+              <fo:block margin-bottom="10mm" font-style="bold">
+                Каталог
               </fo:block>
+              <fo:block>на заложна къща</fo:block>
+              <fo:block>ФМИ</fo:block>
               <fo:external-graphic src="url('images/pawnshop.png')" content-height="500" content-width="360" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic>
             </fo:block>
           </fo:block-container>
