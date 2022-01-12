@@ -142,7 +142,7 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="relative" wrap-option="wrap">
-            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Arial" font-size="40pt" color="black" margin-bottom="20px">
+            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Monotype Corsiva" font-size="40pt" color="black" margin-bottom="20px">
               <xsl:value-of select="name" />
             </fo:block>
           </fo:block-container>
@@ -204,7 +204,7 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="relative" wrap-option="wrap">
-            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Arial" font-size="40pt" color="black" margin-bottom="20px">
+            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Monotype Corsiva" font-size="40pt" color="black" margin-bottom="20px">
               <xsl:value-of select="name" />
             </fo:block>
           </fo:block-container>
@@ -273,7 +273,7 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="relative" wrap-option="wrap">
-            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Arial" font-size="40pt" color="black" margin-bottom="20px">
+            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Monotype Corsiva" font-size="40pt" color="black" margin-bottom="20px">
               <xsl:value-of select="name" />
             </fo:block>
           </fo:block-container>
@@ -327,7 +327,7 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="relative" wrap-option="wrap">
-            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Arial" font-size="40pt" color="black" margin-bottom="20px">
+            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Monotype Corsiva" font-size="40pt" color="black" margin-bottom="20px">
               <xsl:value-of select="name" />
             </fo:block>
           </fo:block-container>
@@ -389,7 +389,7 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="relative" wrap-option="wrap">
-            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Arial" font-size="40pt" color="black" margin-bottom="20px">
+            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Monotype Corsiva" font-size="40pt" color="black" margin-bottom="20px">
               <xsl:value-of select="name" />
             </fo:block>
           </fo:block-container>
@@ -466,7 +466,7 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="relative" wrap-option="wrap">
-            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Arial" font-size="40pt" color="black" margin-bottom="20px">
+            <fo:block position="absolute" text-align="center" padding-before="10px" margin-left="10px" font-family="Monotype Corsiva" font-size="40pt" color="black" margin-bottom="20px">
               <xsl:value-of select="name" />
             </fo:block>
           </fo:block-container>
