@@ -18,137 +18,145 @@
 <pawnshop>
     <classification>
         <jewellery>
-            <resource_ref ref="J000001">Gold Chain</resource_ref>
-            <resource_ref ref="J000002">Necklace</resource_ref>
+            <resource_ref ref="J000001">Златен ланец</resource_ref>
+            <resource_ref ref="J000002">Златна огърлица</resource_ref>
         </jewellery>
         <electronics>
-            <resource_ref ref="E000001">Iphone XR smartphone</resource_ref>
-            <resource_ref ref="E000002">Seiko Series 5 Blue</resource_ref>
+            <resource_ref ref="E000001">Смартфон "Iphone XR"</resource_ref>
+            <resource_ref ref="E000002">Часовник Сейко Серия 5</resource_ref>
         </electronics>
         <antiques>
-            <resource_ref ref="AQ0001">Antique Vase</resource_ref>
+            <resource_ref ref="AQ0001">Антична Шотландска ваза</resource_ref>
         </antiques>
         <art>
-            <resource_ref ref="A000001">American Gothic Painting</resource_ref>
-            <resource_ref ref="A000002">Creation Of Adam Painting</resource_ref>
+            <resource_ref ref="A000001">Картина American Gothic</resource_ref>
+            <resource_ref ref="A000002">Картина Creation Of Adam</resource_ref>
 
         </art>
         <precious_metals>
-            <resource_ref ref="M000001">24K gold piece</resource_ref>
-            <resource_ref ref="M000002">10g platinum piece</resource_ref>
+            <resource_ref ref="M000001">Златно кюлче 10 гр</resource_ref>
+            <resource_ref ref="M000002">Платина 10 гр</resource_ref>
         </precious_metals>
         <vehicles>
-            <resource_ref ref="V000001">VW Golf 4</resource_ref>
-            <resource_ref ref="V000002">Fiat Punto</resource_ref>
+            <resource_ref ref="V000001">Голф 4</resource_ref>
+            <resource_ref ref="V000002">Фиат Пунто</resource_ref>
         </vehicles>
     </classification>
 
 
     <resources>
         <resource id="J000001" classification="Jewellery">
-            <name>Gold Chain</name>
+            <name>Златен ланец</name>
             <pawn_ref ref="P-J000001" />
+            <manufacturer>Fendi</manufacturer>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>140.99</value>
             </pawnshop_evaluation>
-            <description>A 24 karat gold chain</description>
+            <description>Ланец от 24 карата чисто злато, в почти отлично състояние.</description>
             <image href="goldChain" />
         </resource>
         <resource id="J000002" classification="Jewellery">
-            <name>Necklace</name>
+            <name>Златна огърлица</name>
             <pawn_ref ref="P-J000002" />
+            <manufacturer> неясен произход </manufacturer>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>120.22</value>
             </pawnshop_evaluation>
-            <description>A brand new golden necklace that belonged to Cleopatra's cat </description>
+            <description>Изключително запазена златна огърлица, принадлежала на краля на Анлгия през 12-ти век.Верифициран произход от специалисти по историята на Кралството в периода. </description>
             <image href="necklace" />
         </resource>
 
         <resource id="E000001" classification="Electronics">
-            <name>Iphone XR smartphone</name>
+            <name>Смартфон "Iphone XR"</name>
             <pawn_ref ref="P-E000001" />
+            <manufacturer> Apple </manufacturer>
             <model>XR</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>300.00</value>
             </pawnshop_evaluation>
-            <description>Second hand Iphone XR with 128GB memory space and iOS 15.2 installed</description>
+            <description> Втора ръка смартфон модел "Iphone XR", памет 128GB, последна версия на iOS, добро качество.</description>
             <image href="iphoneXR" />
         </resource>
-
+        
         <resource id="E000002" classification="Electronics">
-            <name>Seiko Series 5 Blue</name>
+            <name>Часовник Сейко Серия 5</name>
             <pawn_ref ref="P-E000002" />
+            <manufacturer> Seiko </manufacturer>
             <model>Series 5</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>366.20</value>
             </pawnshop_evaluation>
-            <description>Minimal wear full automatic watch</description>
+            <description>Автоматичен часовник Сейко Серия 5, син цвят, запазен.</description>
             <image href="watch" />
         </resource>
 
         <resource id="AQ0001" classification="Antiques">
-            <name>Antique Vase</name>
+            <name>Антична Шотландска ваза</name>
             <pawn_ref ref="P-AQ0001" />
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>80.20</value>
             </pawnshop_evaluation>
-            <description>Antique vase from 18th century</description>
+            <description>Антична ваза от 18ти век, Шотландия. Добро състояние.</description>
             <image href="antiqueVase" />
         </resource>
 
         <resource id="A000001" classification="Art">
-            <name>American Gothic Painting</name>
+            <name>Картина American Gothic</name>
             <pawn_ref ref="P-A000001" />
             <author>Jimmy Italiano</author>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>660.20</value>
             </pawnshop_evaluation>
-            <description>Realistic replica of the famous painting American Gothic from 20th century</description>
+            <description>Реалистична реплика на известната картина "American Gothic", 20-ти век.</description>
             <image href="americanGothicPaintingReplica" />
         </resource>
 
         <resource id="A000002" classification="Art">
-            <name>Creation Of Adam Painting</name>
+            <name>Картина Creation Of Adam</name>
             <pawn_ref ref="P-A000002" />
             <author>Unknown</author>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>390.20</value>
             </pawnshop_evaluation>
-            <description>Replica of the famous painting Creation of Adam</description>
+            <description>Реплика на световноизвестната картина "Creation of Adam". Продавачът е оторизиран търговец на картини и изкуство.</description>
             <image href="adamPaintingReplica" />
         </resource>
 
         <resource id="M000001" classification="Precious_Metals">
-            <name>24K gold piece</name>
+            <name>Златно кюлче 10 гр</name>
             <pawn_ref ref="P-M000001" />
+            <manufacturer>Valcambi</manufacturer>
+            <quantity>10 г.</quantity>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>70.20</value>
             </pawnshop_evaluation>
-            <description>10 gram 24k gold bar</description>
+            <description>10 грама 24 карата чисто злато. Закупено директно от Valcambi, Швейцария през 2018г., с ID референтен номер.</description>
             <image href="gold24k" />
         </resource>
-
+        
         <resource id="M000002" classification="Precious_Metals">
-            <name>10g platinum piece</name>
+            <name>Платина 10 гр</name>
             <pawn_ref ref="P-M000002" />
+            <manufacturer>Тавекс</manufacturer>
+            <quantity>10 г.</quantity>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>30.60</value>
             </pawnshop_evaluation>
-            <description>10 gram platinum bar</description>
+            <description>10 грама платина. Не притежава опаковката, фактурата и касовата бележка от закупуването.Непроверен.</description>
             <image href="platiniumBar" />
         </resource>
 
         <resource id="V000001" classification="Vehicles">
-            <name>VW Golf 4</name>
+            <name>Голф 4</name>
             <pawn_ref ref="P-V000001" />
             <manufacturer>VW</manufacturer>
             <model>Golf 4</model>
@@ -156,12 +164,12 @@
                 <currency>BGN</currency>
                 <value>900.60</value>
             </pawnshop_evaluation>
-            <description>Golf 4 from 2001 year, 1.6 petrol engine with 101 HP</description>
+            <description>Лек автомобил Фолксваген Голф 4, 2001 г., чипосана, бензин 1.6, 101 к.с., карана в Германия само до аптеката и обратно от стара баба, 30 000 км. реални.</description>
             <image href="VWGolf4" />
         </resource>
 
         <resource id="V000002" classification="Vehicles">
-            <name>Fiat Punto</name>
+            <name>Фиат Пунто</name>
             <pawn_ref ref="P-V000002" />
             <manufacturer>Fiat</manufacturer>
             <model>Punto</model>
@@ -169,7 +177,7 @@
                 <currency>BGN</currency>
                 <value>600.00</value>
             </pawnshop_evaluation>
-            <description>Fiat punto from 98' with 70hp and a 1.4 petrol engine</description>
+            <description>Лек автомобил Фиат Пунто, производство 2004 г., 70 к.с., бензин 1.4. Добро състояние. </description>
             <image href="fiatPunto" />
         </resource>
     </resources>
@@ -182,15 +190,15 @@
                 <value>75.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Viktor</name>
-                <surname>Petkov</surname>
-                <employee_id>E0001</employee_id>
+                <name>Елена</name>
+                <surname>Карамитева</surname>
+                <employee_id>E0003</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Dimitar</name>
-                <surname>Ivanov</surname>
+                <name>Димитър</name>
+                <surname>Иванов</surname>
                 <ucn>9502029909</ucn>
-                <permanent_address>Sofia, Bulgaria</permanent_address>
+                <permanent_address>София, България</permanent_address>
                 <phone_number>0875664446</phone_number>
                 <id_card>641290001</id_card>
             </submitter>
@@ -204,15 +212,15 @@
                 <value>50.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Viktor</name>
-                <surname>Petkov</surname>
+                <name>Кристиан</name>
+                <surname>Паралелов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Eleonora</name>
-                <surname>Todorova</surname>
+                <name>Елеонора</name>
+                <surname>Тодорова</surname>
                 <ucn>9003099909</ucn>
-                <permanent_address>Plovdiv, Bulgaria</permanent_address>
+                <permanent_address>Пловдив, България</permanent_address>
                 <phone_number>0896578546</phone_number>
                 <id_card>640105901</id_card>
             </submitter>
@@ -226,15 +234,15 @@
                 <value>240.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Viktor</name>
-                <surname>Petkov</surname>
+                <name>Кристиан</name>
+                <surname>Паралелов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Qvor</name>
-                <surname>Todorov</surname>
+                <name>Явор</name>
+                <surname>Тодоров</surname>
                 <ucn>9003088809</ucn>
-                <permanent_address>Varna, Bulgaria</permanent_address>
+                <permanent_address>Варна, България</permanent_address>
                 <phone_number>0898566519</phone_number>
                 <id_card>640195901</id_card>
             </submitter>
@@ -248,15 +256,15 @@
                 <value>314.20</value>
             </amount_given>
             <recipient_employee>
-                <name>Elena</name>
-                <surname>Ivanova</surname>
-                <employee_id>E0002</employee_id>
+                <name>Елена</name>
+                <surname>Карамитева</surname>
+                <employee_id>E0003</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Alexander</name>
-                <surname>Dzhindzhi</surname>
+                <name>Айше</name>
+                <surname>Стоилова</surname>
                 <ucn>9333688899</ucn>
-                <permanent_address>Varna, Bulgaria</permanent_address>
+                <permanent_address>Варна, България</permanent_address>
                 <phone_number>0898732119</phone_number>
                 <id_card>641103201</id_card>
             </submitter>
@@ -271,15 +279,15 @@
                 <value>54.20</value>
             </amount_given>
             <recipient_employee>
-                <name>Elena</name>
-                <surname>Ivanova</surname>
+                <name>Елена</name>
+                <surname>Иванова</surname>
                 <employee_id>E0002</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Alexander</name>
-                <surname>Dzhindzhi</surname>
+                <name>Айше</name>
+                <surname>Стоилова</surname>
                 <ucn>9333688899</ucn>
-                <permanent_address>Varna, Bulgaria</permanent_address>
+                <permanent_address>Корница, Гоце Делчев, България</permanent_address>
                 <phone_number>0898732119</phone_number>
                 <id_card>641103201</id_card>
             </submitter>
@@ -295,15 +303,15 @@
                 <value>530.20</value>
             </amount_given>
             <recipient_employee>
-                <name>Elena</name>
-                <surname>Ivanova</surname>
+                <name>Елена</name>
+                <surname>Иванова</surname>
                 <employee_id>E0002</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Versace</name>
-                <surname>Mulyachki</surname>
+                <name>Версаче</name>
+                <surname>Марински</surname>
                 <ucn>6612628606</ucn>
-                <permanent_address>Gotse Delchev, Bulgaria</permanent_address>
+                <permanent_address>Гоце Делчев, България</permanent_address>
                 <phone_number>0898737779</phone_number>
                 <id_card>643453221</id_card>
             </submitter>
@@ -318,15 +326,15 @@
                 <value>330.20</value>
             </amount_given>
             <recipient_employee>
-                <name>Elena</name>
-                <surname>Ivanova</surname>
+                <name>Исмаил</name>
+                <surname>Нерефе</surname>
                 <employee_id>E0002</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Versace</name>
-                <surname>Mulyachki</surname>
+                <name>Анита</name>
+                <surname>Мюнхаузер</surname>
                 <ucn>6612628606</ucn>
-                <permanent_address>Gotse Delchev, Bulgaria</permanent_address>
+                <permanent_address>Столипиново, България</permanent_address>
                 <phone_number>0898737779</phone_number>
                 <id_card>643453221</id_card>
             </submitter>
@@ -341,15 +349,15 @@
                 <value>50.20</value>
             </amount_given>
             <recipient_employee>
-                <name>Viktor</name>
-                <surname>Petkov</surname>
+                <name>Кристиан</name>
+                <surname>Паралелов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Antonio</name>
-                <surname>Meshenliev</surname>
+                <name>Антонио</name>
+                <surname>Мариолуизов</surname>
                 <ucn>6612661325</ucn>
-                <permanent_address>Pernik, Bulgaria</permanent_address>
+                <permanent_address>Перник, България</permanent_address>
                 <phone_number>0878214779</phone_number>
                 <id_card>649215441</id_card>
             </submitter>
@@ -364,15 +372,15 @@
                 <value>14.60</value>
             </amount_given>
             <recipient_employee>
-                <name>Viktor</name>
-                <surname>Petkov</surname>
-                <employee_id>E0001</employee_id>
+                <name>Осман</name>
+                <surname>Османов</surname>
+                <employee_id>E0004</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Toronto</name>
-                <surname>Angelov</surname>
+                <name>Торонто</name>
+                <surname>Ангелов</surname>
                 <ucn>3516236723</ucn>
-                <permanent_address>Pernik, Bulgaria</permanent_address>
+                <permanent_address>Перник, България</permanent_address>
                 <phone_number>0871222679</phone_number>
                 <id_card>649204449</id_card>
             </submitter>
@@ -387,15 +395,15 @@
                 <value>700.60</value>
             </amount_given>
             <recipient_employee>
-                <name>Viktor</name>
-                <surname>Petkov</surname>
+                <name>Кристиан</name>
+                <surname>Паралелов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Vasil</name>
-                <surname>Zaimov</surname>
+                <name>Васил</name>
+                <surname>Замов</surname>
                 <ucn>3224146733</ucn>
-                <permanent_address>Dabrash, Bulgaria</permanent_address>
+                <permanent_address>Самоков, България</permanent_address>
                 <phone_number>0871431227</phone_number>
                 <id_card>249213649</id_card>
             </submitter>
@@ -410,15 +418,15 @@
                 <value>400.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Viktor</name>
-                <surname>Petkov</surname>
+                <name>Кристиан</name>
+                <surname>Паралелов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Dimitar</name>
-                <surname>Zeinev</surname>
+                <name>Димитър</name>
+                <surname>Зейнев</surname>
                 <ucn>1211163244</ucn>
-                <permanent_address>Dabrash, Bulgaria</permanent_address>
+                <permanent_address>Дъбраш, България</permanent_address>
                 <phone_number>0875531325</phone_number>
                 <id_card>742514649</id_card>
             </submitter>
