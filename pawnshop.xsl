@@ -18,11 +18,11 @@
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="absolute" top="-2.5cm" left="-2.5cm">
             <fo:block position="absolute" text-align="center" font-weight="bold" margin-left="2cm" font-family="Monotype Corsiva" font-size="56pt" padding-before="50mm" color="black">
-              <fo:block margin-bottom="10mm" font-style="bold">
+              <fo:block font-style="bold">
                 Каталог
               </fo:block>
               <fo:block>на заложна къща</fo:block>
-              <fo:block>ФМИ</fo:block>
+              <fo:block margin-bottom="10mm">ФМИ</fo:block>
               <fo:external-graphic src="url('images/pawnshop.png')" content-height="500" content-width="360" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic>
             </fo:block>
           </fo:block-container>
@@ -34,9 +34,7 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="absolute" top="10px" left="10px">
-            <fo:block margin-bottom="24pt">
-              Налични продукти в каталога:
-            </fo:block>
+            
             <fo:block position="absolute" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
                 Бижута:
@@ -413,13 +411,6 @@
 
                 <fo:table-cell>
                   <fo:block-container position="relative">
-                    <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-                      Цена:
-                      <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
-                        <xsl:value-of select="pawnshop_evaluation/currency" />
-                        <xsl:value-of select="pawnshop_evaluation/value" />
-                      </fo:inline>
-                    </fo:block>
 
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
                       Цена:
