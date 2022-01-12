@@ -59,7 +59,7 @@
         <resource id="J000002" classification="Jewellery">
             <name>Златна огърлица</name>
             <pawn_ref ref="P-J000002" />
-            <manufacturer> неясен произход </manufacturer>
+            <manufacturer> Неясен произход </manufacturer>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>120.22</value>
@@ -80,7 +80,7 @@
             <description> Втора ръка смартфон модел "Iphone XR", памет 128GB, последна версия на iOS, добро качество.</description>
             <image href="iphoneXR" />
         </resource>
-        
+
         <resource id="E000002" classification="Electronics">
             <name>Часовник Сейко Серия 5</name>
             <pawn_ref ref="P-E000002" />
@@ -120,7 +120,7 @@
         <resource id="A000002" classification="Art">
             <name>Картина Creation Of Adam</name>
             <pawn_ref ref="P-A000002" />
-            <author>Unknown</author>
+            <author>Неясен</author>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
                 <value>390.20</value>
@@ -141,7 +141,7 @@
             <description>10 грама 24 карата чисто злато. Закупено директно от Valcambi, Швейцария през 2018г., с ID референтен номер.</description>
             <image href="gold24k" />
         </resource>
-        
+
         <resource id="M000002" classification="Precious_Metals">
             <name>Платина 10 гр</name>
             <pawn_ref ref="P-M000002" />
