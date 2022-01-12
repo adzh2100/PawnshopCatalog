@@ -105,7 +105,7 @@
 
             <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
-                Автомобили:
+                Превозни средства:
               </fo:block>
 
               <xsl:for-each select="pawnshop/classification/vehicles/resource_ref">
