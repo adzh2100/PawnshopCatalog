@@ -21,7 +21,7 @@
               <fo:block margin-bottom="10mm">
                 Каталог на заложна къща ФМИ
               </fo:block>
-              <fo:external-graphic src="url('https://cdn-icons-png.flaticon.com/512/2656/2656808.png')" content-height="500" content-width="360" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic>
+              <fo:external-graphic src="url('images/pawnshop.png')" content-height="500" content-width="360" margin-left="5cm" margin-bottom="15mm"></fo:external-graphic>
             </fo:block>
           </fo:block-container>
         </fo:flow>
@@ -32,7 +32,9 @@
       <fo:page-sequence master-reference="page">
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="absolute" top="10px" left="10px">
-            Налични продукти в каталога
+            <fo:block margin-bottom="24pt">
+              Налични продукти в каталога:
+            </fo:block>
             <fo:block position="absolute" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
                 Бижута:
@@ -102,7 +104,7 @@
             </fo:block>
 
             <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
-              <fo:block margin-bottom="10px">
+              <fo:block>
                 Автомобили:
               </fo:block>
 
@@ -259,7 +261,6 @@
               </fo:table-row>
             </fo:table-body>
           </fo:table>
-          "
           <xsl:call-template name="additional-info"></xsl:call-template>
         </fo:flow>
       </fo:page-sequence>
