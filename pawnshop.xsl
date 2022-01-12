@@ -33,7 +33,7 @@
         <fo:flow flow-name="xsl-region-body">
           <fo:block-container position="absolute" top="10px" left="10px">
             Налични продукти в каталога
-            <fo:block position="absolute" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20px">
+            <fo:block position="absolute" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
                 Бижута:
               </fo:block>
@@ -46,7 +46,7 @@
               </xsl:for-each>
             </fo:block>
 
-            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="24px">
+            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
                 Електроника:
               </fo:block>
@@ -60,7 +60,7 @@
             </fo:block>
 
 
-            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="24px">
+            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
                 Антики:
               </fo:block>
@@ -74,7 +74,7 @@
             </fo:block>
 
 
-            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="24px">
+            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
                 Изкуство:
               </fo:block>
@@ -88,7 +88,7 @@
             </fo:block>
 
 
-            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="24px">
+            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block>
                 Ценни метали:
               </fo:block>
@@ -101,7 +101,7 @@
               </xsl:for-each>
             </fo:block>
 
-            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="24px">
+            <fo:block position="relative" text-align="left" font-weight="bold" font-family="Monotype Corsiva" font-size="24pt" color="black" margin-bottom="20pt">
               <fo:block margin-bottom="10px">
                 Автомобили:
               </fo:block>
@@ -131,7 +131,7 @@
 
   <!--      Images      -->
   <xsl:template match="image">
-    <fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="200" content-width="245" border="4px solid black" />
+    <fo:external-graphic src="{unparsed-entity-uri(@href)}" content-height="300" content-width="345" border="4px solid black" />
   </xsl:template>
 
   <!--      Jewellery      -->
@@ -531,7 +531,7 @@
 
   <!-- Additional info -->
   <xsl:template name="additional-info">
-    <fo:block-container position="relative" font-style="italic" top="12cm" left="0" margin-top="50px">
+    <fo:block-container position="relative" font-style="italic" top="12cm" left="0" margin-top="50pt">
       <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="20pt" color="black" padding-before="10px">
             Допълнителна информация за залога, асоцииран с този продукт:
       </fo:block>
@@ -559,10 +559,10 @@
           <xsl:value-of select="id(pawn_ref/@ref)/submitter/surname" />
         </fo:inline>
         <fo:block font-style="italic" font-weight="normal" font-size="14pt">
-            Контакти:
-            <xsl:value-of select="id(pawn_ref/@ref)/submitter/permanent_address" />
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="id(pawn_ref/@ref)/submitter/phone_number" />
+          Контакти:
+          <xsl:value-of select="id(pawn_ref/@ref)/submitter/permanent_address" />
+          <xsl:text>, </xsl:text>
+          <xsl:value-of select="id(pawn_ref/@ref)/submitter/phone_number" />
         </fo:block>
       </fo:block>
 
@@ -575,11 +575,11 @@
           <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/surname" />
         </fo:inline>
         <fo:block font-style="italic" font-weight="normal" font-size="14pt">
-            Работен идектификатор:
-            <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/employee_id" />
+          Работен идектификатор:
+          <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/employee_id" />
         </fo:block>
       </fo:block>
-      
+
       <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
         Дата на създаване:
         <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
