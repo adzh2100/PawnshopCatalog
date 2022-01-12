@@ -531,12 +531,12 @@
 
   <!-- Additional info -->
   <xsl:template name="additional-info">
-    <fo:block-container position="relative" font-style="italic" top="12.5cm" left="0" margin-top="100px">
+    <fo:block-container position="relative" font-style="italic" top="12cm" left="0" margin-top="50px">
       <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="20pt" color="black" padding-before="10px">
             Допълнителна информация за залога, асоцииран с този продукт:
-          </fo:block>
+      </fo:block>
       <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-        Term:
+        Срок:
         <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
           <xsl:value-of select="id(pawn_ref/@ref)/term" />
         </fo:inline>
@@ -558,6 +558,12 @@
         <fo:inline position="relative" font-weight="normal" font-size="16pt">
           <xsl:value-of select="id(pawn_ref/@ref)/submitter/surname" />
         </fo:inline>
+        <fo:block font-style="italic" font-weight="normal" font-size="14pt">
+            Контакти:
+            <xsl:value-of select="id(pawn_ref/@ref)/submitter/permanent_address" />
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="id(pawn_ref/@ref)/submitter/phone_number" />
+        </fo:block>
       </fo:block>
 
       <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
@@ -568,19 +574,24 @@
         <fo:inline position="relative" font-weight="normal" font-size="16pt">
           <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/surname" />
         </fo:inline>
-        <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-          Дата на създаване:
-          <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
-            <xsl:value-of select="id(pawn_ref/@ref)/created_at" />
-          </fo:inline>
+        <fo:block font-style="italic" font-weight="normal" font-size="14pt">
+            Работен идектификатор:
+            <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/employee_id" />
         </fo:block>
+      </fo:block>
+      
+      <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
+        Дата на създаване:
+        <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
+          <xsl:value-of select="id(pawn_ref/@ref)/created_at" />
+        </fo:inline>
+      </fo:block>
 
-        <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-          Дата на последна промяна:
-          <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
-            <xsl:value-of select="id(pawn_ref/@ref)/updated_at" />
-          </fo:inline>
-        </fo:block>
+      <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
+        Дата на последна промяна:
+        <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
+          <xsl:value-of select="id(pawn_ref/@ref)/updated_at" />
+        </fo:inline>
       </fo:block>
     </fo:block-container>
   </xsl:template>
