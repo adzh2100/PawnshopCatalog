@@ -569,7 +569,7 @@
           <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/surname" />
         </fo:inline>
         <fo:block font-style="italic" font-weight="normal" font-size="14pt">
-          Работен идектификатор:
+          Работен идентификатор:
           <xsl:value-of select="id(pawn_ref/@ref)/recipient_employee/employee_id" />
         </fo:block>
       </fo:block>
