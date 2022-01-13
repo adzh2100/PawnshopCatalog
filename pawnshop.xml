@@ -48,12 +48,12 @@
         <resource id="J000001" classification="Jewellery">
             <name>Златен ланец</name>
             <pawn_ref ref="P-J000001" />
-            <manufacturer>Fendi</manufacturer>
+            <manufacturer>Curtoir</manufacturer>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>140.99</value>
+                <value>440.99</value>
             </pawnshop_evaluation>
-            <description>Ланец от 24 карата чисто злато, в почти отлично състояние.</description>
+            <description>Ланец от чисто злато, примесен със сребро в добре изглеждаща нишка. Почти отлично състояние - леки драскотини от употреба.</description>
             <image href="goldChain" />
         </resource>
         <resource id="J000002" classification="Jewellery">
@@ -62,9 +62,9 @@
             <manufacturer> Неясен произход </manufacturer>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>120.22</value>
+                <value>5500.00</value>
             </pawnshop_evaluation>
-            <description>Изключително запазена златна огърлица, принадлежала на краля на Анлгия през 12-ти век.Верифициран произход от специалисти по историята на Кралството в периода. </description>
+            <description>Изключително запазена златна огърлица, принадлежала на краля на Анлгия през 12-ти век. Верифициран произход от специалисти по историята на Кралството в периода. </description>
             <image href="necklace" />
         </resource>
 
@@ -75,9 +75,9 @@
             <model>XR</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>300.00</value>
+                <value>400.00</value>
             </pawnshop_evaluation>
-            <description> Втора ръка смартфон модел "Iphone XR", памет 128GB, последна версия на iOS, добро качество.</description>
+            <description> Втора ръка смартфон модел "Iphone XR", памет 128GB, последна версия на iOS, добро качество. Дисплей - работещ, леко надраскан. Лицето каза, че "Порта за зареждане някой път не работи". </description>
             <image href="iphoneXR" />
         </resource>
 
@@ -88,9 +88,9 @@
             <model>Series 5</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>366.20</value>
+                <value>210.00</value>
             </pawnshop_evaluation>
-            <description>Автоматичен часовник Сейко Серия 5, син цвят, запазен.</description>
+            <description>Автоматичен часовник Сейко Серия 5, сребрист цвят, запазен, леки следи от употреба. </description>
             <image href="watch" />
         </resource>
 
@@ -99,9 +99,9 @@
             <pawn_ref ref="P-AQ0001" />
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>80.20</value>
+                <value>400.00</value>
             </pawnshop_evaluation>
-            <description>Антична ваза от 18ти век, Шотландия. Добро състояние.</description>
+            <description>Антична ваза от 18ти век, Шотландия. Добро състояние. Съмнения за реплика, купихме я на твърде ниско, да се извика лице за проверка и оторизация! </description>
             <image href="antiqueVase" />
         </resource>
 
@@ -111,9 +111,9 @@
             <author>Jimmy Italiano</author>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>660.20</value>
+                <value>550.00</value>
             </pawnshop_evaluation>
-            <description>Реалистична реплика на известната картина "American Gothic", 20-ти век.</description>
+            <description>Реалистична реплика на известната картина "American Gothic", 20-ти век. Добро състояние, продавача и преди е минавал през нас, коректен. </description>
             <image href="americanGothicPaintingReplica" />
         </resource>
 
@@ -123,9 +123,9 @@
             <author>Неясен</author>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>390.20</value>
+                <value>990.00</value>
             </pawnshop_evaluation>
-            <description>Реплика на световноизвестната картина "Creation of Adam". Продавачът е оторизиран търговец на картини и изкуство.</description>
+            <description>Реплика на световноизвестната картина "Creation of Adam". Продавачът е оторизиран търговец на картини и изкуство. Отлично състояние. </description>
             <image href="adamPaintingReplica" />
         </resource>
 
@@ -136,22 +136,21 @@
             <quantity>10 г.</quantity>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>70.20</value>
+                <value>1020.00</value>
             </pawnshop_evaluation>
-            <description>10 грама 24 карата чисто злато. Закупено директно от Valcambi, Швейцария през 2018г., с ID референтен номер.</description>
+            <description>10 грама 24 карата чисто злато. Закупено директно от Valcambi, Швейцария през 2018г., с ID референтен номер. Проверено.</description>
             <image href="gold24k" />
         </resource>
 
         <resource id="M000002" classification="Precious_Metals">
             <name>Платина 10 гр</name>
             <pawn_ref ref="P-M000002" />
-            <manufacturer>Тавекс</manufacturer>
             <quantity>10 г.</quantity>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>30.60</value>
+                <value>400.00</value>
             </pawnshop_evaluation>
-            <description>10 грама платина. Не притежава опаковката, фактурата и касовата бележка от закупуването.Непроверен.</description>
+            <description>10 грама платина. Дойде с опаковка, но липсват фактурата / касовата бележка от закупуването. Непроверен.</description>
             <image href="platiniumBar" />
         </resource>
 
@@ -162,9 +161,9 @@
             <model>Golf 4</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>900.60</value>
+                <value>1900.00</value>
             </pawnshop_evaluation>
-            <description>Лек автомобил Фолксваген Голф 4, 2001 г., чипосана, бензин 1.6, 101 к.с., карана в Германия само до аптеката и обратно от стара баба, 30 000 км. реални.</description>
+            <description>Лек автомобил Фолксваген Голф 4, 2001 г., 101 к.с., бензин 1.6. По думи на продавача, "чипосана, карана от баба в Германия само до аптеката и обратно, 130 000 км. реални."</description>
             <image href="VWGolf4" />
         </resource>
 
@@ -175,7 +174,7 @@
             <model>Punto</model>
             <pawnshop_evaluation>
                 <currency>BGN</currency>
-                <value>600.00</value>
+                <value>4400.00</value>
             </pawnshop_evaluation>
             <description>Лек автомобил Фиат Пунто, производство 2004 г., 70 к.с., бензин 1.4. Добро състояние. </description>
             <image href="fiatPunto" />
@@ -187,17 +186,17 @@
         <pawn id="P-J000001" status="Active">
             <amount_given>
                 <currency>BGN</currency>
-                <value>75.00</value>
+                <value>215.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Елена</name>
+                <name>Милена</name>
                 <surname>Карамитева</surname>
                 <employee_id>E0003</employee_id>
             </recipient_employee>
             <submitter>
                 <name>Димитър</name>
                 <surname>Иванов</surname>
-                <ucn>9502029909</ucn>
+                <ucn>8502023909</ucn>
                 <permanent_address>София, България</permanent_address>
                 <phone_number>0875664446</phone_number>
                 <id_card>641290001</id_card>
@@ -209,11 +208,11 @@
         <pawn id="P-J000002" status="Active">
             <amount_given>
                 <currency>BGN</currency>
-                <value>50.00</value>
+                <value>3800.00</value>
             </amount_given>
             <recipient_employee>
                 <name>Кристиан</name>
-                <surname>Паралелов</surname>
+                <surname>Костов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
@@ -235,7 +234,7 @@
             </amount_given>
             <recipient_employee>
                 <name>Кристиан</name>
-                <surname>Паралелов</surname>
+                <surname>Костов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
@@ -253,17 +252,17 @@
         <pawn id="P-E000002" status="Active">
             <amount_given>
                 <currency>BGN</currency>
-                <value>314.20</value>
+                <value>149.99</value>
             </amount_given>
             <recipient_employee>
-                <name>Елена</name>
+                <name>Милена</name>
                 <surname>Карамитева</surname>
                 <employee_id>E0003</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Айше</name>
-                <surname>Стоилова</surname>
-                <ucn>9333688899</ucn>
+                <name>Анна</name>
+                <surname>Теодорова</surname>
+                <ucn>7233636809</ucn>
                 <permanent_address>Варна, България</permanent_address>
                 <phone_number>0898732119</phone_number>
                 <id_card>641103201</id_card>
@@ -276,17 +275,17 @@
         <pawn id="P-AQ0001" status="Active">
             <amount_given>
                 <currency>BGN</currency>
-                <value>54.20</value>
+                <value>80.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Елена</name>
-                <surname>Иванова</surname>
+                <name>Красимир</name>
+                <surname>Михайлов</surname>
                 <employee_id>E0002</employee_id>
             </recipient_employee>
             <submitter>
                 <name>Айше</name>
                 <surname>Стоилова</surname>
-                <ucn>9333688899</ucn>
+                <ucn>0043010666</ucn>
                 <permanent_address>Корница, Гоце Делчев, България</permanent_address>
                 <phone_number>0898732119</phone_number>
                 <id_card>641103201</id_card>
@@ -300,16 +299,16 @@
         <pawn id="P-A000001" status="Settled">
             <amount_given>
                 <currency>BGN</currency>
-                <value>530.20</value>
+                <value>225.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Елена</name>
-                <surname>Иванова</surname>
+                <name>Красимир</name>
+                <surname>Михайлов</surname>
                 <employee_id>E0002</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Версаче</name>
-                <surname>Марински</surname>
+                <name>Цветелина</name>
+                <surname>Пеева</surname>
                 <ucn>6612628606</ucn>
                 <permanent_address>Гоце Делчев, България</permanent_address>
                 <phone_number>0898737779</phone_number>
@@ -323,16 +322,16 @@
         <pawn id="P-A000002" status="Active">
             <amount_given>
                 <currency>BGN</currency>
-                <value>330.20</value>
+                <value>630.99</value>
             </amount_given>
             <recipient_employee>
-                <name>Исмаил</name>
-                <surname>Нерефе</surname>
+                <name>Красимир</name>
+                <surname>Михайлов</surname>
                 <employee_id>E0002</employee_id>
             </recipient_employee>
             <submitter>
                 <name>Анита</name>
-                <surname>Мюнхаузер</surname>
+                <surname>Пеева</surname>
                 <ucn>6612628606</ucn>
                 <permanent_address>Столипиново, България</permanent_address>
                 <phone_number>0898737779</phone_number>
@@ -346,16 +345,16 @@
         <pawn id="P-M000001" status="Settled">
             <amount_given>
                 <currency>BGN</currency>
-                <value>50.20</value>
+                <value>900.20</value>
             </amount_given>
             <recipient_employee>
                 <name>Кристиан</name>
-                <surname>Паралелов</surname>
+                <surname>Костов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
                 <name>Антонио</name>
-                <surname>Мариолуизов</surname>
+                <surname>Маринов</surname>
                 <ucn>6612661325</ucn>
                 <permanent_address>Перник, България</permanent_address>
                 <phone_number>0878214779</phone_number>
@@ -369,15 +368,15 @@
         <pawn id="P-M000002" status="Active">
             <amount_given>
                 <currency>BGN</currency>
-                <value>14.60</value>
+                <value>140.00</value>
             </amount_given>
             <recipient_employee>
-                <name>Осман</name>
-                <surname>Османов</surname>
+                <name>Андрей</name>
+                <surname>Радев</surname>
                 <employee_id>E0004</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Торонто</name>
+                <name>Звезделин</name>
                 <surname>Ангелов</surname>
                 <ucn>3516236723</ucn>
                 <permanent_address>Перник, България</permanent_address>
@@ -392,16 +391,16 @@
         <pawn id="P-V000001" status="Pending">
             <amount_given>
                 <currency>BGN</currency>
-                <value>700.60</value>
+                <value>1000.00</value>
             </amount_given>
             <recipient_employee>
                 <name>Кристиан</name>
-                <surname>Паралелов</surname>
+                <surname>Костов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
                 <name>Васил</name>
-                <surname>Замов</surname>
+                <surname>Заимов</surname>
                 <ucn>3224146733</ucn>
                 <permanent_address>Самоков, България</permanent_address>
                 <phone_number>0871431227</phone_number>
@@ -415,16 +414,16 @@
         <pawn id="P-V000002" status="Active">
             <amount_given>
                 <currency>BGN</currency>
-                <value>400.00</value>
+                <value>3000.00</value>
             </amount_given>
             <recipient_employee>
                 <name>Кристиан</name>
-                <surname>Паралелов</surname>
+                <surname>Костов</surname>
                 <employee_id>E0001</employee_id>
             </recipient_employee>
             <submitter>
                 <name>Димитър</name>
-                <surname>Зейнев</surname>
+                <surname>Хаджиларски</surname>
                 <ucn>1211163244</ucn>
                 <permanent_address>Дъбраш, България</permanent_address>
                 <phone_number>0875531325</phone_number>

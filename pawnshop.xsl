@@ -156,7 +156,7 @@
                 <fo:table-cell>
                   <fo:block-container position="relative">
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-                      Цена:
+                      Ценова оценка:
                       <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
                         <xsl:value-of select="pawnshop_evaluation/currency" />
                         <xsl:value-of select="pawnshop_evaluation/value" />
@@ -227,7 +227,7 @@
                 <fo:table-cell>
                   <fo:block-container position="relative">
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-                      Цена:
+                      Ценова оценка:
                       <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
                         <xsl:value-of select="pawnshop_evaluation/currency" />
                         <xsl:value-of select="pawnshop_evaluation/value" />
@@ -287,7 +287,7 @@
                 <fo:table-cell>
                   <fo:block-container position="relative">
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-                      Цена:
+                      Ценова оценка:
                       <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
                         <xsl:value-of select="pawnshop_evaluation/currency" />
                         <xsl:value-of select="pawnshop_evaluation/value" />
@@ -350,7 +350,7 @@
                 <fo:table-cell>
                   <fo:block-container position="relative">
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-                      Цена:
+                      Ценова оценка:
                       <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
                         <xsl:value-of select="pawnshop_evaluation/currency" />
                         <xsl:value-of select="pawnshop_evaluation/value" />
@@ -413,7 +413,7 @@
                   <fo:block-container position="relative">
 
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-                      Цена:
+                      Ценова оценка:
                       <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
                         <xsl:value-of select="pawnshop_evaluation/currency" />
                         <xsl:value-of select="pawnshop_evaluation/value" />
@@ -474,7 +474,7 @@
                 <fo:table-cell>
                   <fo:block-container position="relative">
                     <fo:block position="relative" font-family="Arial" font-weight="bold" font-size="18pt" color="black" padding-before="10px">
-                      Цена:
+                      Ценова оценка:
                       <fo:inline position="relative" padding-left="3px" font-weight="normal" font-size="16pt">
                         <xsl:value-of select="pawnshop_evaluation/currency" />
                         <xsl:value-of select="pawnshop_evaluation/value" />
