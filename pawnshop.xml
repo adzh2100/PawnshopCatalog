@@ -4,14 +4,14 @@
 <!DOCTYPE pawnshop SYSTEM "pawnshop.dtd" [
     <!ENTITY goldChain SYSTEM "images/gold_chain.jpg" NDATA jpg>
     <!ENTITY necklace SYSTEM "images/necklace.jpg" NDATA jpg>
-    <!ENTITY iphoneXR SYSTEM "images/iphoneXR.jpg" NDATA jpg>
+    <!ENTITY iphoneXR SYSTEM "images/iphone_xr.jpg" NDATA jpg>
     <!ENTITY watch SYSTEM "images/watch.jpg" NDATA jpg>
     <!ENTITY antiqueVase SYSTEM "images/antique_vase.jpg" NDATA jpg>
     <!ENTITY americanGothicPaintingReplica SYSTEM "images/american_gothic.jpg" NDATA jpg>
     <!ENTITY adamPaintingReplica SYSTEM "images/creation_of_adam.jpg" NDATA jpg>
-    <!ENTITY gold24k SYSTEM "images/gold24k.jpg" NDATA jpg>
-    <!ENTITY platiniumBar SYSTEM "images/10_gram_platinum.jpg" NDATA jpg>
-    <!ENTITY VWGolf4 SYSTEM "images/vw_golf4.jpg" NDATA jpg>
+    <!ENTITY gold24k SYSTEM "images/gold_bar.jpg" NDATA jpg>
+    <!ENTITY platiniumBar SYSTEM "images/plat_bar.jpg" NDATA jpg>
+    <!ENTITY VWGolf4 SYSTEM "images/vw_golf.jpg" NDATA jpg>
     <!ENTITY fiatPunto SYSTEM "images/fiat_punto.jpg" NDATA jpg>
 ]>
 
