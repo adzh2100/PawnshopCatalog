@@ -28,7 +28,7 @@
         </electronics>
         <antiques>
             <resource_ref ref="AQ0001">Антична Шотландска ваза</resource_ref>
-            <resource_ref ref="AQ0002">Антична Шотландска ваза</resource_ref>
+            <resource_ref ref="AQ0002">Античен часовник</resource_ref>
         </antiques>
         <art>
             <resource_ref ref="A000001">Картина American Gothic</resource_ref>
