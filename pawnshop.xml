@@ -7,6 +7,7 @@
     <!ENTITY iphoneXR SYSTEM "images/iphone_xr.jpg" NDATA jpg>
     <!ENTITY watch SYSTEM "images/watch.jpg" NDATA jpg>
     <!ENTITY antiqueVase SYSTEM "images/antique_vase.jpg" NDATA jpg>
+    <!ENTITY antiqueWatch SYSTEM "images/antique_watch.jpg" NDATA jpg>
     <!ENTITY americanGothicPaintingReplica SYSTEM "images/american_gothic.jpg" NDATA jpg>
     <!ENTITY adamPaintingReplica SYSTEM "images/creation_of_adam.jpg" NDATA jpg>
     <!ENTITY gold24k SYSTEM "images/gold_bar.jpg" NDATA jpg>
@@ -27,6 +28,7 @@
         </electronics>
         <antiques>
             <resource_ref ref="AQ0001">Антична Шотландска ваза</resource_ref>
+            <resource_ref ref="AQ0002">Антична Шотландска ваза</resource_ref>
         </antiques>
         <art>
             <resource_ref ref="A000001">Картина American Gothic</resource_ref>
@@ -103,6 +105,17 @@
             </pawnshop_evaluation>
             <description>Антична ваза от 18ти век, Шотландия. Добро състояние. Съмнения за реплика, купихме я на твърде ниско, да се извика лице за проверка и оторизация! </description>
             <image href="antiqueVase" />
+        </resource>
+
+        <resource id="AQ0002" classification="Antiques">
+            <name>Античен часовник</name>
+            <pawn_ref ref="P-AQ0002" />
+            <pawnshop_evaluation>
+                <currency>BGN</currency>
+                <value>350.00</value>
+            </pawnshop_evaluation>
+            <description>Античен мраморен часовник с оригинален механизъм от 18-ти век, Франция. Запазен, в отлично състояние. </description>
+            <image href="antiqueWatch" />
         </resource>
 
         <resource id="A000001" classification="Art">
@@ -283,16 +296,40 @@
                 <employee_id>E0002</employee_id>
             </recipient_employee>
             <submitter>
-                <name>Айше</name>
+                <name>Александра</name>
                 <surname>Стоилова</surname>
                 <ucn>0043010666</ucn>
-                <permanent_address>Корница, Гоце Делчев, България</permanent_address>
+                <permanent_address>Варна, България</permanent_address>
                 <phone_number>0898732119</phone_number>
                 <id_card>641103201</id_card>
             </submitter>
             <term>11.04.2022</term>
             <created_at>01.01.2022</created_at>
             <updated_at>02.01.2022</updated_at>
+        </pawn>
+
+
+        <pawn id="P-AQ0002" status="Active">
+            <amount_given>
+                <currency>BGN</currency>
+                <value>120.00</value>
+            </amount_given>
+            <recipient_employee>
+                <name>Красимир</name>
+                <surname>Михайлов</surname>
+                <employee_id>E0002</employee_id>
+            </recipient_employee>
+            <submitter>
+                <name>Алекдандър</name>
+                <surname>Петков</surname>
+                <ucn>9702010266</ucn>
+                <permanent_address>Варна, Гоце Делчев, България</permanent_address>
+                <phone_number>0898732119</phone_number>
+                <id_card>641213501</id_card>
+            </submitter>
+            <term>11.04.2022</term>
+            <created_at>06.01.2022</created_at>
+            <updated_at>06.01.2022</updated_at>
         </pawn>
 
 
